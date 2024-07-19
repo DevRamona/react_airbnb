@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Cards(props) {
+export default function Cards({img, heading1, paragraph, heading2}) {
     return(
         <div className="">
             <div>
-                <img src={props.img}></img>
-                <h1>{props.heading1}</h1>
-                <p>{props.paragraph}</p>
-                <h2>{props.heading2}</h2>
+                <img src={img}></img>
+                <h1>{heading1}</h1>
+                <p>{paragraph}</p>
+                <h2>{heading2}</h2>
 
             </div>
 
