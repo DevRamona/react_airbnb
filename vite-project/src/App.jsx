@@ -6,7 +6,7 @@ import './App.css'
 import Cards from "./Components/Cards"
 export default function App() {
   return (
-    <div>
+    <div className='grid grid-cols-4'>
       <Cards
     img = "./src/images/kevin.webp"
     heading1 = "Come have fun with Kevin"
