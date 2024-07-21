@@ -9,6 +9,7 @@ export default function Cards({img, heading1, paragraph, heading2}) {
                 <p>{paragraph}</p>
                 <h2>{heading2}</h2>
                 <h3>{heading2}</h3>
+                <h6></h6>
 
             </div>
 
