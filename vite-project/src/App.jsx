@@ -1,45 +1,35 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Admin from "./Components/Admin"
+import Community from "./Components/Community"
+import Expert from "./Components/Expert"
+import Market from "./Components/Market"
+import Prices from "./Components/MarketPrices"
+import Weather from "./Components/Weather"
+import DashboardContent from './Components/DashboardContent'
+
 
 import './App.css'
-import Cards from "./Components/Cards"
+// import Cards from "./Components/Cards"
+
+
 export default function App() {
+ 
   return (
-    <div className='grid grid-cols-4'>
-      <Cards
-    img = "./src/images/kevin.webp"
-    heading1 = "Come have fun with Kevin"
-    paragraph = "Hosted by Hart"
-    heading2 = "Coming this July"
-    
-    />
-    <Cards
-    img = "./src/images/doja.webp"
-    heading1 = "Come have fun with Doja"
-    paragraph = "Hosted by Cart"
-    heading2 = "Coming this July"
-    />
-    <Cards
-    img = "./src/images/tant.webp"
-    heading1 = "Come have fun with Meddy"
-    paragraph = "Hosted by Medard"
-    heading2 = "Coming this July"
-    />
-    <Cards
-    img = "./src/images/home.webp"
-    heading1 = "Come have fun with Chris"
-    paragraph = "Hosted by Eazy"
-    heading2 = "Coming this July"
-
-    />
-    
-    
-  
-    
-
+    <div>
+      <Admin/>
+      <DashboardContent/>
+      <Community/>
+      <Expert/>
+      <Market/>
+      <Prices/>
+      <Weather/>
+      
+      
 
     </div>
+    
     
   )
 }
