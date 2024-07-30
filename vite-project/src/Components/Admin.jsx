@@ -31,28 +31,22 @@ const FarmerDashboard = () => {
   // ... (previous state and handlers remain the same)
 
   return (
-    <Router>
+    
       <div className="flex bg-gray-100 min-h-screen">
         <Sidebar />
         <main className="flex-1 p-8">
-          <Routes>
-            <Route path="/" element={
+        
               <>
                 <h2 className="text-3xl font-bold mb-6">Welcome to Bloom !</h2>
                 <img src='/images/Screenshot 2024-07-27 125616.png'></img>
                 {/* ... (rest of the dashboard content) */}
               </>
-            } />
-            <Route path="/dashboard-content" element={<DashboardContent />} />
-            <Route path="/market-prices" element={<MarketPrices />} />
-            <Route path="/weather-forecast" element={<Weather />} />
-            <Route path="/marketplace" element={<Market/>} />
-            <Route path="/expert-advice" element={<Expert />} />
-            <Route path="/community-forum" element={<Community />} />
-          </Routes>
+            
+            
+  
         </main>
       </div>
-    </Router>
+    
   );
 };
 

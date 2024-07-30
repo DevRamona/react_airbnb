@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Admin from "./Components/Admin"
-import Community from "./Components/Community"
-import Expert from "./Components/Expert"
-import Market from "./Components/Market"
-import Prices from "./Components/MarketPrices"
-import Weather from "./Components/Weather"
-import DashboardContent from './Components/DashboardContent'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import CommunityPage from "./Components/CommunityPage";
+import "./App.css";
 
-
-import './App.css'
-// import Cards from "./Components/Cards"
-
-
-export default function App() {
- 
+// A simple component for the root path
+const HomePage = () => {
   return (
     <div>
-      <Admin/>
-      <DashboardContent/>
-      <Community/>
-      <Expert/>
-      <Market/>
-      <Prices/>
-      <Weather/>
-      
-      
-
+      <h1>Welcome to AgricultureHub</h1>
+      <Link to="/community-page">Go to Community Page</Link>
     </div>
-    
-    
-  )
+  );
+};
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/community-page" element={<CommunityPage />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
+  );
 }
